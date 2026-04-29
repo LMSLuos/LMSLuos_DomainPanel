@@ -8,4 +8,4 @@ binding = "DOMAIN_KV"
 id = "1a73e2f84c54414f8cc68b02ec75878b"
 
 [triggers]
-crons = ["22:40"] #"{CF_CRONS}" action部署时被变量替换，默认为北京时间 9:00 和 21:00
+crons = ["1:00"] #"{CF_CRONS}" action部署时被变量替换，默认为北京时间 9:00 和 21:00
