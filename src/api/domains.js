@@ -3,7 +3,8 @@
 import { isPrimaryDomain } from '../utils';
 import { fetchDomainFromAPI } from './whois';
 
-const KV_KEY = 'DOMAIN_LIST';
+env.DOMAIN_KV="LMSLuos_DomainPanel_KV1";
+const KV_KEY = '1a73e2f84c54414f8cc68b02ec75878b';
 
 // 从KV中获取域名列表
 export async function getDomainsFromKV(env) {
