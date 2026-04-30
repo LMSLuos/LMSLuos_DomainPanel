@@ -24,7 +24,7 @@ export function generateFooter(githubURL, blogURL, blogName) {
     
     return `
         <div class="footer">
-            <p><span>${yearText} Yutian81</span><span>|</span>
+            <p><span>${yearText} LMSLuos</span><span> Ori Auther Yutian81</span><span>|</span>
                 <a href="${githubURL}" target="_blank"><i class="fab fa-github"></i> Github</a><span>|</span>
                 <a href="${blogURL}" target="_blank"><i class="fas fa-blog"></i> ${blogName}</a>
             </p>
