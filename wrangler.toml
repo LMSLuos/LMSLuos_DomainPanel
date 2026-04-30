@@ -1,4 +1,4 @@
-name = "LMSLuos_DomainPanel"
+name = "lmsluos-domainpanel" #LMSLuos_DomainPanel
 main = "src/index.js"
 compatibility_date = "2026-4-29"
 keep_vars = true
