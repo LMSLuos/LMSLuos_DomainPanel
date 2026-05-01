@@ -5,14 +5,9 @@ import { fetchDomainFromAPI } from './whois';
 
 
 const KV_KEY = '1a73e2f84c54414f8cc68b02ec75878b';
-// 更新KV名
-export async function updateKVName(env) {
-    env.DOMAIN_KV="LMSLuos_DomainPanel_KV1";
-}
 
 // 从KV中获取域名列表
 export async function getDomainsFromKV(env) {
-    env.DOMAIN_KV="LMSLuos_DomainPanel_KV1";
     if (!env.DOMAIN_KV) {
         throw new Error('未配置KV命名空间 DOMAIN_KV。请检查您的配置');
     }
@@ -22,7 +17,6 @@ export async function getDomainsFromKV(env) {
 
 // 保存域名信息到KV
 export async function setDomainsToKV(env, domains) {
-    env.DOMAIN_KV="LMSLuos_DomainPanel_KV1";
     if (!env.DOMAIN_KV) {
         throw new Error('未配置KV命名空间 DOMAIN_KV。请检查您的配置');
     }
@@ -31,7 +25,6 @@ export async function setDomainsToKV(env, domains) {
 
 // 验证和处理单个域名数据的 POST 请求
 async function handlePostDomain(request, env) {
-    env.DOMAIN_KV="LMSLuos_DomainPanel_KV1";
     let newDomainData;
     try {
         newDomainData = await request.json();
@@ -117,7 +110,6 @@ async function handlePostDomain(request, env) {
 
 // 删除域名
 async function handleDeleteDomain(request, env) {
-    env.DOMAIN_KV="LMSLuos_DomainPanel_KV1";
     let deleteData;
     let domainsToDelete = [];
     
