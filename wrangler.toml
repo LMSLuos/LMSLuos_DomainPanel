@@ -10,5 +10,10 @@ preview_urls = false
 binding = "LMSLuos_DomainPanel_KV1" 
 id = "1a73e2f84c54414f8cc68b02ec75878b"
 
+# 新增DOMAIN_KV适配
+[[kv_namespaces]]
+binding = "DOMAIN_KV"
+id = "1a73e2f84c54414f8cc68b02ec75878b"
+
 [triggers]
-crons = ["0 1 1 * *"] #"{CF_CRONS}" action部署时被变量替换，默认为北京时间 9:00 和 21:00
+crons = ["0 1 1 * *"] #"{CF_CRONS}" action部署时被变量替换，默认为北京时间 9:00 和 21:00，现在是每月一号早上一点
